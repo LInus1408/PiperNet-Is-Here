@@ -343,3 +343,37 @@ body {
   text-align: center;
   color: #fff;
 }
+
+.introducing {
+  margin-top: 48px;
+  padding-bottom: 52px;
+}
+.introducing_container {
+  max-width: 1219px;
+  margin: 0px auto;
+  padding: 0px 55px;
+}
+.introducing_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  margin-bottom: 16px;
+}
+.introducing_container_logo {
+  float: left;
+  padding-right: 48px;
+}
+.introducing_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
