@@ -377,3 +377,73 @@ body {
   margin-bottom: 40px;
 }
 
+.team {
+  background: #EEEEEE;
+  padding-bottom: 40px;
+}
+.team_container {
+  max-width: 1219px;
+  margin: auto;
+  padding: 48px 55px 56px 55px;
+}
+.team_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+}
+.team_container_portraits {
+  max-width: 1219px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 56px 55px 82px 55px;
+  justify-content: space-between;
+}
+.team_portrait_figure {
+  max-width: 350px;
+}
+.team_portrait-pick {
+  display: block;
+  margin: 0px auto;
+}
+.team_portrait_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+  text-align: center;
+}
+.team_portrait_desc {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.footer {
+  background-color: #333333;
+}
+.footer_container {
+  max-width: 1219px;
+  margin: auto;
+  padding: 48px 340px 64px 340px;
+}
+.footer_container-desc {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
