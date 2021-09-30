@@ -316,3 +316,30 @@ body {
 .problem_text:last-child {
   padding-bottom: 0px;
 }
+.container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.hero {
+  margin-top: 92px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-image: url('/img/png/hero.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero__message {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+}
