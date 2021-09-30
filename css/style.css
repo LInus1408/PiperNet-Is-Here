@@ -272,6 +272,7 @@ body {
   margin-top: 84px;
   padding-top: 160px;
   padding-bottom: 160px;
+  margin-bottom: 48px;
 }
 .piperNet_Is_Here_container {
   box-sizing: border-box;
@@ -287,4 +288,31 @@ body {
   line-height: 84px;
   text-align: center;
   color: white;
+}
+.problem_container {
+  max-width: 1219px;
+  margin: auto;
+  padding: 0px 55px;
+}
+.problem_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  padding-bottom: 16px;
+}
+.problem_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+.problem_text:last-child {
+  padding-bottom: 0px;
 }
