@@ -240,7 +240,10 @@ body {
 .header_logo_pic:nth-child(1) {
   margin-right: -49px;
 }
-.header_menu {
+#menu__toggle {
+  display: none;
+}
+.menu__box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -261,12 +264,15 @@ body {
   border-right: 2px solid white;
   padding: 0px 8px;
 }
+.header_link:hover, .header_link:focus, .header_link:active {
+  text-shadow: 0px 0px 12px silver;
+}
 .header_link_end {
   border-right: none;
 }
 
 .piperNet_Is_Here {
-  background-image: url("/img/png/PiperNet.png");
+  background-image: url("../img/png/PiperNet.png");
   background-size: cover;
   background-position: center center;
   margin-top: 84px;
@@ -288,6 +294,9 @@ body {
   line-height: 84px;
   text-align: center;
   color: white;
+}
+.piperNet_Is_Here_title:hover, .piperNet_Is_Here_title:focus, .piperNet_Is_Here_title:active {
+  text-shadow: 0px 0px 12px red;
 }
 .problem_container {
   max-width: 1219px;
@@ -322,7 +331,7 @@ body {
 }
 
 .hero {
-  background-image: url("/img/png/hero.png");
+  background-image: url("../img/png/hero.png");
   background-size: cover;
   background-position: center center;
   padding-top: 128px;
@@ -373,7 +382,6 @@ body {
   color: #000000;
   margin-bottom: 40px;
 }
-
 .team {
   background: #EEEEEE;
   padding-bottom: 40px;
@@ -444,12 +452,100 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+
 @media screen and (max-width: 800px) {
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #E6E600;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background: #420E07;
+    background: -moz-linear-gradient(left, #420E07 0%, #1C6EA4 56%, #422854 100%);
+    background: -webkit-linear-gradient(left, #420E07 0%, #1C6EA4 56%, #422854 100%);
+    background: linear-gradient(to right, #420E07 0%, #1C6EA4 56%, #422854 100%);
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;  
+    color: #333; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;  
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color:#19B2FF;
+  }
+  .part-3_block_solutions {
+    margin-top: -130px;
+  }
+  .part-3_block_solutions {
+    padding-bottom: 30px;
+  }
+  .footer_about-store {
+    margin-top: 20px;
+  }
   .footer_container {
     max-width: 1219px;
     margin: auto;
     padding: 48px 50px 64px 50px;
   } 
+  .header_link {
+    border-right: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .introducing_title {
